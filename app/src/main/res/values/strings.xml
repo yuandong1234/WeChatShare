@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">WeChatShare</string>
+    <string name="mall_product_bargain_activity_countdown">砍价活动倒计时 :</string>
+
+
+    <string name="mall_product_group_all">全部</string>
+    <string name="mall_product_group_going">拼团中</string>
+    <string name="mall_product_group_success">已拼团</string>
+    <string name="mall_product_group_end">已结束</string>
 </resources>
