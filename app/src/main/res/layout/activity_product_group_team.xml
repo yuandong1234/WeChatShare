@@ -5,17 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#f2f3f5"
     tools:context=".ProductGroupTeamActivity">
 
     <android.support.design.widget.TabLayout
         android:id="@+id/tabLayout"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_below="@+id/title_bar"
         android:background="@android:color/white"
         app:tabIndicatorColor="@android:color/black"
-        app:tabIndicatorHeight="2dp"
+        app:tabIndicatorHeight="0dp"
         app:tabMode="fixed"
+        style="@style/style_custom_tab_Layout"
+        app:tabGravity="fill"
         app:tabSelectedTextColor="#3F3F3F"
         app:tabTextColor="#999999">
 

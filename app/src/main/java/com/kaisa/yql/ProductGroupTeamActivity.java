@@ -6,8 +6,9 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -21,6 +22,7 @@ public class ProductGroupTeamActivity extends AppCompatActivity {
 
         initView();
     }
+
     private TabLayout tabLayout;
     private ViewPager viewpager;
 
@@ -63,14 +65,18 @@ public class ProductGroupTeamActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(viewpager);
 
         //自定义view
-//        for (int i = 0; i < tabLayout.getTabCount(); i++) {
-//            TabLayout.Tab tab = tabLayout.getTabAt(i);
-//            if (tab != null) {
-//                tab.setCustomView(pagerAdapter.getTabView(i));
-//            }
-//        }
-    }
+        for (int i = 0; i < tabLayout.getTabCount(); i++) {
+            TabLayout.Tab tab = tabLayout.getTabAt(i);
+            if (tab != null) {
+                View view = LayoutInflater.from(this).inflate(R.layout.layout_group_team_tab, null);
 
+                TextView tv_tab = view.findViewById(R.id.title);
+                tv_tab.setGravity(Gravity.CENTER);
+                tv_tab.setText(titles.get(i));
+                tab.setCustomView(view);
+            }
+        }
+    }
 
 
 }
