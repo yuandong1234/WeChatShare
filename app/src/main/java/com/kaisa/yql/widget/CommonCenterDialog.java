@@ -1,4 +1,4 @@
-package com.kaisa.yql;
+package com.kaisa.yql.widget;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -11,6 +11,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+
+import com.kaisa.yql.R;
 
 /**
  * 通用居中显示dialog

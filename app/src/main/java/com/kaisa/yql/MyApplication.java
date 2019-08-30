@@ -9,6 +9,7 @@ public class MyApplication extends Application {
     public static final String APP_ID = "wx685dee45aa3ff2b3";
     //public static final String APP_ID = "wxd930ea5d5a258f4f";
     private static IWXAPI api;
+
     @Override
     public void onCreate() {
         super.onCreate();
